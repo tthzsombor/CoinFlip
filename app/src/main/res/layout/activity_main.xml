@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coin Flip"
+        android:textSize="50sp"
+        android:id="@+id/cim" />
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_below="@+id/cim"
+        android:src="@drawable/heads"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:orientation="horizontal"
+        android:id="@+id/linear">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/buttonfej"
+            android:text="FEJ"
+            android:textSize="25sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/buttoniras"
+            android:text="ÍRÁS"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:text="Dobások:"
+        android:id="@+id/dobasok"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dobasok"
+        android:text="Győzelem:"
+        android:id="@+id/gyozelem"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gyozelem"
+        android:text="Vereség:"
+        android:id="@+id/vereseg"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/dobasok"
+        android:layout_below="@+id/linear"
+        android:layout_marginLeft="5sp"
+        android:text="0"
+        android:textSize="25sp"
+        android:id="@+id/dobasokszam"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gyozelem"
+        android:layout_below="@+id/dobasokszam"
+        android:layout_marginLeft="5sp"
+        android:text="0"
+        android:textSize="25sp"
+        android:id="@+id/gyozelemszam"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/vereseg"
+        android:layout_below="@+id/gyozelemszam"
+        android:layout_marginLeft="5sp"
+        android:text="0"
+        android:textSize="25sp"
+        android:id="@+id/veresegszam"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
